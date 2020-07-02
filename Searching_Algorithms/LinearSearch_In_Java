@@ -22,7 +22,7 @@ public class LinearSearch {
 		int ele = scan.nextInt();
 		int position = linearSearch(arr,ele);
 		if(position > 0) 
-			System.out.println("Element is present in " +position+1 +"th position");
+			System.out.println("Element is present in " +(position+1) +"th position");
 		else
 			System.out.println("Element is not found in the array");
 		scan.close();
