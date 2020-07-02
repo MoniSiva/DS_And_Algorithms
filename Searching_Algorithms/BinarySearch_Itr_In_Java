@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class BinarySearch_Iterative {	
+
+/**
+*    Binary search Logic Iterative
+*/
+	private static int binarySearch(int[] arr, int ele) {
+		int left =0;
+		int right = arr.length-1;		
+		while(left <= right) {
+			int mid = (left+right)/2;                //Mid element check
+			if(arr[mid] == ele)
+				return mid;
+			else if(arr[mid] > ele)
+				right = mid - 1;                      //Mid element is greater so checking before middle element
+			else
+				left = mid +1;			                  //Mid element is smaller so checking after middle element
+		}		
+		return -1;
+	}
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Number of elements:");
+		int len = scan.nextInt();
+		System.out.println("Enter elements:");
+		int arr[] = new int[len];
+		for (int i = 0;i<len;i++) {
+			arr[i] = scan.nextInt();
+		}
+		System.out.println("Enter the element:");
+		int ele = scan.nextInt();
+		int position = binarySearch(arr,ele);
+		if(position > 0) 
+			System.out.println("Element is present in " +(position+1) +"th position");
+		else
+			System.out.println("Element is not found in the array");
+		scan.close();
+	}
+}
