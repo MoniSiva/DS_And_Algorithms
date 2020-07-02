@@ -12,9 +12,9 @@ public class BinarySearch_Iterative {
 			if(arr[mid] == ele)
 				return mid;
 			else if(arr[mid] > ele)
-				right = mid - 1;                      //Mid element is greater so checking before middle element
+				right = mid - 1;                 //Mid element is greater so checking before middle element
 			else
-				left = mid +1;			                  //Mid element is smaller so checking after middle element
+				left = mid +1;			 //Mid element is smaller so checking after middle element
 		}		
 		return -1;
 	}
