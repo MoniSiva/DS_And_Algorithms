@@ -7,7 +7,6 @@ int linearSearch(int arr[],int element){
 			return i+1;			
 	return -1;
 }
-
 int main(){
 	int length;
 	printf("Enter array length:");
