@@ -1,2 +1,2 @@
-# DS-and-Algorithms
+# DS And Algorithms
 Data Structures and Algorithms
