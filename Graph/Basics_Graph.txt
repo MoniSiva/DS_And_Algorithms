@@ -1,0 +1,36 @@
+                                                GRAPH
+                                                
+ Definition:
+       *) Graph is an ordered set G(V,E).  [G -> Graph , V -> Vertices , E -> Edges
+       *) Graph consists of a finite set of vertices(or nodes) and set of Edges which connect a pair of nodes.
+       *) Graphs are used to solve real-life problems that involve representation of the problem space as a network. 
+            Examples of networks include telephone networks, circuit networks, social networks (like LinkedIn, Facebook etc.).
+    For example:::
+    A single user in Facebook can be represented as a node (vertex) while their connection with others can be represented as an edge between nodes.
+          Each node can be a structure that contains information like user’s id, name, gender, etc.
+          
+          
+ Vertex(Nodes):
+        i)  These are the most important components in any graph. 
+        ii) Nodes are entities whose relationships are expressed using edges
+        iii) Each node is a structure and contains information like person id, name, gender, locale etc.
+        
+Types of Nodes :
+        1.Root node:
+                The root node is the ancestor of all other nodes in a graph. 
+                It does not have any ancestor. 
+                Each graph consists of exactly one root node. 
+                Generally, you must start traversing a graph from the root node.
+
+        2.Leaf nodes: 
+              In a graph, leaf nodes represent the nodes that do not have any successors. 
+              These nodes only have ancestor nodes.
+              They can have any number of incoming edges but they will not have any outgoing edges.
+    
+Edges :
+        i) Edges are the components that are used to represent the relationships between various nodes in a graph. 
+        ii) An edge between two nodes expresses a one-way or two-way relationship between the nodes.
+        iii) Edge represents a path between two vertices or a line between two vertices. 
+        
+
+        
