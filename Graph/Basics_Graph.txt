@@ -33,4 +33,28 @@ Edges :
         iii) Edge represents a path between two vertices or a line between two vertices. 
         
 
+								TYPES OF GRAPH
+
+
+Undirected Graph:
+		An undirected graph is a graph in which all the edges are bi-directional 
+		i.e. the edges do not point in any specific direction.
+	For example::
+		if an edge connects node A and B, we can traverse from node A to node B, and from node B to A.
+
+Directed Graph:
+		A directed graph is a graph in which all the edges are uni-directional
+		i.e. the edges point in a single direction.
+	For example::
+		if an edge connects node A and B, but the arrow head points towards B,we can only traverse from node A to node B not in the opposite direction.
+    
+Weighted Graph:
+     Each edge is assigned with a weight or cost.  
+     The total cost of each path will be as the weight of all the edges through the path.
+ 
+Cyclic Graph:
+    Graph that comprises a path that starts from a vertex and ends at the same vertex. 
+    That path is called a cycle. 
+     
+Acyclic graph  --->  is a graph that has no cycle.
         
