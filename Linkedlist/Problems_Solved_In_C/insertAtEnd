@@ -1,0 +1,29 @@
+/* Insert at end/Tail of Linked list
+ *
+ * For your reference:
+ *
+ * LinkedListNode {
+ *     int data;
+ *     LinkedListNode* next;
+ * };
+ *
+ */
+LinkedListNode* insertNodeAtTail(LinkedListNode* head, int data) {
+        LinkedListNode* p = head;
+        LinkedListNode* newnode = ( struct LinkedListNode*)malloc(sizeof(struct LinkedListNode));
+        newnode->data =data;
+        newnode->next = NULL;
+        
+		    //If head is null - Then new list creation
+        if(head == NULL){
+            return newnode;
+        }
+        else{
+			      //Iterate to the end to add at tail
+            while( p->next !=NULL){
+                p = p->next;
+            }
+            p->next = newnode;
+        }        
+        return head;
+}
