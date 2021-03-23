@@ -1,0 +1,16 @@
+/*Insert at head - logic 
+ * For your reference:
+ *
+ * LinkedListNode {
+ *     int data;
+ *     LinkedListNode* next;
+ * };
+ *
+ */
+LinkedListNode* insertNodeAtHead(LinkedListNode* head, int data) {
+    LinkedListNode* newnode = (struct LinkedListNode*)malloc(sizeof(struct LinkedListNode*));
+    newnode -> data = data;
+    newnode -> next = head;
+    head = newnode;    
+    return head;
+}
