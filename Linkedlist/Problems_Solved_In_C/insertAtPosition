@@ -1,0 +1,23 @@
+/*
+ * Insert node at the given position on the linkedlist
+ * For your reference:
+ *
+ * LinkedListNode {
+ *     int data;
+ *     LinkedListNode* next;
+ * };
+ *
+ */
+LinkedListNode* insertNodeAtPosition(LinkedListNode* head, int data, int position) {
+    LinkedListNode* newnode = (struct LinkedListNode*)malloc(sizeof(struct LinkedListNode*));
+    newnode -> data =data;
+    newnode -> next = NULL;
+    LinkedListNode* p = head;
+    int i = 0;
+    for( i= 0;i<position-1 ;i++){
+        p = p->next;
+    }
+    newnode -> next = p -> next;
+    p -> next = newnode;    
+    return head;
+}
