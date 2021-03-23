@@ -1,0 +1,33 @@
+/*
+ * Find the length of the linkedlist (Iterative and Recursive)
+ * For your reference:
+ *
+ * SinglyLinkedListNode {
+ *     int data;
+ *     SinglyLinkedListNode* next;
+ * };
+ *
+ */
+ 
+// Iterative Function to find Length of linkedlist
+int lengthIterative(LinkedListNode* head) {
+    LinkedListNode* p = head;
+	int count = 0;
+	
+	while(p!= NULL ){
+		count++;
+		p = p -> next;
+	}
+	
+    return count;
+}
+
+// Recusive Function to find Length of linkedlist
+
+int lengthRecursive(LinkedListNode* head) {
+    
+	if(head == NULL)     //Returning 0 at end of list
+		return 0;
+		
+	return 1 + lengthRecursive(head->next);
+}
